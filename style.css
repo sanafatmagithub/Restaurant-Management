@@ -1,0 +1,148 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'poppins', sans-serif;
+  box-sizing: border-box;
+  /* background:rgb(149, 190, 231); */
+  background: rgb(146, 208, 241);
+}
+.box
+{
+  height:300px;
+  border: 2px solid rgb(141, 106, 106) ;
+  width:60%;
+  background-color: rgba(255, 255, 255, -0.6);
+  border-radius: 8px;
+  padding-left:2%;
+  padding-top: 2%;
+}
+.main-box
+{
+  margin-left:25%;
+  margin-top:3%;
+}
+.heading h1{
+  color : rgb(14, 14, 228);
+  text-decoration:solid;
+  text-decoration: underline;
+  text-decoration-color: black;
+  text-align: center;
+  margin-top: 4%;
+  margin-left: 7%;
+  margin-right: 10%;
+ }
+ 
+div.box label {
+  font-weight: bold;
+  color: #000000;
+  margin-top: 40%;
+  font-size:18px;
+}
+
+#price,#dish
+{
+  width:95%;
+  height:30px;
+  margin-top:1%
+}
+#button
+{
+  width: 96%;
+  margin-top: 2%;
+  height:30px;
+  border-radius: 3px;
+  color: #000000;
+  cursor: pointer;
+}
+
+
+#orderhead{
+  margin-left:25%;
+  text-decoration: underline;
+}
+/* For output */
+#output{
+  display: flex;
+  justify-content: space-between;
+  width:80%;
+  margin-left: 10%;
+}
+
+/* For Table */
+table{
+  border-collapse: collapse;
+  border: 2px solid rgb(141, 106, 106);
+}
+td, th {
+  border: 1px solid #dddddd;
+  padding:3px;
+}
+
+
+/* CSS on Delete Button */
+/* After JS */
+.button1{
+  width:108%;
+  margin-top: 2%;
+  height:30px;
+  border-radius: 3px;
+  cursor: pointer;
+  text-align: center;
+  color: white;
+  background-color: rgb(233, 107, 61);
+  font-size: 16px;
+  margin-right:5%;
+}
+
+/* For making Responsive Page */
+/* For screen sizes up to 768px (e.g., tablets) */
+@media (max-width: 768px) {
+  .main-box {
+    margin: 5% auto;
+    width: 90%;
+  }
+
+  .box {
+    width: 90%;
+    padding-left: 5%;
+    padding-top: 5%;
+  }
+
+  #orderhead {
+    margin-left: 10%;
+  }
+}
+
+/* For screen sizes up to 576px (e.g., mobile phones) */
+@media (max-width: 576px) {
+  .main-box {
+    margin: 10% auto;
+    width: 90%;
+  }
+
+  .box {
+    width: 90%;
+    padding-left: 5%;
+    padding-top: 5%;
+  }
+
+  #orderhead {
+    margin-left: 5%;
+  }
+
+  /* Adjust font size for small screens */
+  .box label,
+  #price,
+  #dish,
+  .form-select,
+  #button,
+  th,
+  td {
+    font-size: 14px;
+  }
+
+  /* Make tables scroll horizontally on small screens */
+  table {
+    overflow-x: auto;
+  }
+}

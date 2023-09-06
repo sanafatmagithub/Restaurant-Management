@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Taking order in Hotel</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="heading">
+    <h1>THE ROYAL RESTAURANT</h1>
+  </div>
+  <div class="main-box">
+    <div class="box">
+      <form action="" id="my-form">
+        <label for="price">Choose Price:</label><br>
+        <input type="number" id="price"><br><br>
+        <label for="dish">Choose Dish:</label><br>
+        <input type="text" id="dish"><br><br>
+        <label for="table">Choose a Table:</label><br>
+        <div>
+          <select class="form-select" id="table">
+            <option selected>-- Table --</option>
+            <option value="Table 1">Table 1</option>
+            <option value="Table 2">Table 2</option>
+            <option value="Table 3">Table 3</option>
+          </select>
+        </div>
+        <input type="submit" id="button" value="Placed Order">
+      </form>
+    </div><br>
+    <h2 id="orderhead">Orders Are</h2><br>
+  </div>
+
+  <div id="output">
+    <div>
+      <table>
+        <h3>Table 1</h3>
+        <tr>
+          <th> Price</th>
+          <th> Dish</th>
+          <th> Table No</th>
+          <th> Delete</th>
+        </tr>
+        <tbody class="table1">
+        </tbody>
+      </table>
+    </div>
+    <div>
+      <table>
+        <h3>Table 2</h3>
+        <tr>
+          <th> Price</th>
+          <th> Dish</th>
+          <th> Table No</th>
+          <th> Delete</th>
+        </tr>
+        <tbody class="table2"></tbody>
+      </table>
+    </div>
+    <div>
+      <table>
+        <h3>Table 3</h3>
+        <tr>
+          <th> Price</th>
+          <th> Dish</th>
+          <th> Table No</th>
+          <th> Delete</th>
+        </tr>
+        <tbody class="table3"></tbody>
+      </table>
+    </div>
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.5.0/axios.min.js"></script>
+  <script src="script.js"></script>
+</body>
+
+</html>
